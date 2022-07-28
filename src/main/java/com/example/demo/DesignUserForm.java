@@ -4,7 +4,7 @@ public class DesignUserForm {
 	private int kaiinId; //会員ID
 	private String gdNm; //デザイン会社名
 	private int telNo; // 電話番号
-	private int addNm; //郵便番号
+	private int addNo; //郵便番号
 	private String add1; //住所（都道府県）
 	private String add2; //住所（市町村）
 	private String add3; //住所（番地）
@@ -26,11 +26,11 @@ public class DesignUserForm {
 	public void setTelNo(int telNo) {
 		this.telNo = telNo;
 	}
-	public int getAddNm() {
-		return addNm;
+	public int getAddNo() {
+		return addNo;
 	}
-	public void setAddNm(int addNm) {
-		this.addNm = addNm;
+	public void setAddNo(int addNo) {
+		this.addNo = addNo;
 	}
 	public String getAdd1() {
 		return add1;

@@ -7,7 +7,7 @@
 		SELECT kaiin_id as kaiinId
 		      ,gd_name as gdNm
 		      ,tel_no as telNo
-		      ,add_no as addNm
+		      ,add_no as addNo
 		      ,add1_name as add1
 		      ,add2_name as add2
 		      ,add3_name as add3

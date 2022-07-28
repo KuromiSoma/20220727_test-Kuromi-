@@ -19,7 +19,7 @@ public class DesignUserList {
 	DesignUserMapper designUserMapper;
 
 	public List<DesignUser> getUserList() {
-		List<DesignUser> userList = DesignUserMapper.selectAll();
+		List<DesignUser> userList = designUserMapper.selectAll();
 		return userList;
 	}
 }
