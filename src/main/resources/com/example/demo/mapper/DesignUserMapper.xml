@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="mapper.DesignUserMapper">
+<mapper namespace="com.example.demo.mapper.DesignUserMapper">
     <select id="selectAll" resultType="com.example.demo.DesignUser">
 		SELECT kaiin_id as kaiinId
 		      ,gd_name as gdNm
@@ -11,7 +11,6 @@
 		      ,add1_name as add1
 		      ,add2_name as add2
 		      ,add3_name as add3
-		FROM jps_user.member_master mm
-		WHERE del_flg = 0
+		FROM jps_user.member_master
     </select>
 </mapper>

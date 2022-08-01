@@ -4,12 +4,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import mapper.DesignUserMapper;
-
 import com.example.demo.DesignUser;
 import com.example.demo.DesignUserForm;
-import mapper.DesignUserMapper;
+import com.example.demo.mapper.DesignUserMapper;
 
 @Service
 @Transactional
