@@ -1,11 +1,10 @@
-package com.example.demo;
+package com.example.demo.member_master;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.example.demo.DesignUser;
-import com.example.demo.DesignUserForm;
+
 import com.example.demo.mapper.DesignUserMapper;
 
 @Service

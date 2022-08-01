@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.member_master;
 
 import lombok.Data;
 
@@ -11,6 +11,7 @@ public class DesignUser {
 	private String add1; //住所（都道府県）
 	private String add2; //住所（市町村）
 	private String add3; //住所（番地）
+	
 	public int getKaiinId() {
 		return kaiinId;
 	}
