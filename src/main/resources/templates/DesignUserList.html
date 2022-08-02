@@ -12,12 +12,12 @@
 	<table class="list">
 	  <tbody><tr>
 		  <th class="r1" style="width: 5%">会員ID</th>
-  	    <th class="r1" style="width: 15%">デザイン会社名</th>
+  	    <th class="r1" style="width: 20%">デザイン会社名</th>
   	    <th class="r2" style="width: 12%">電話番号</th>
-  	    <th class="r2" style="width: 12%">郵便番号</th>
-  	    <th class="r3" style="width: 10%">住所（都道府県）</th>
-  		<th class="r3" style="width: 10%">住所（市町村）</th>
-  		<th class="r4" style="width: 10%">住所（番地）</th>
+  	    <th class="r2" style="width: 18%">郵便番号</th>
+  	    <th class="r3" style="width: 18%">住所（都道府県）</th>
+  		<th class="r3" style="width: 15%">住所（市町村）</th>
+  		<th class="r4" style="width: 5%">住所（番地）</th>
 	  </tr>
 	  <tr th:each="list:${list}">
 	    <td><a href="/designuserlist" th:href="@{/designuserlist}" th:text="${list.kaiinId}"></a></td>
