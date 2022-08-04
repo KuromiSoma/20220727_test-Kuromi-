@@ -6,7 +6,7 @@
     <select id="selectAll" resultType="com.example.demo.memberclient_master.TorihikiUser">
 		SELECT kaiin_id as kaiinId
 		      ,pp_no as ppNo
-		      ,pp_name as ppName
+		      ,pp_name as ppNm
 		      ,tel_no as telNo
 		      ,add_no as addNo
 		      ,add1_name as add1
