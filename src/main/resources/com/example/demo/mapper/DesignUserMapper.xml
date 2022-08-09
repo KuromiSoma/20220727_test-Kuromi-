@@ -11,6 +11,11 @@
 		      ,add1_name as add1
 		      ,add2_name as add2
 		      ,add3_name as add3
-		FROM jps_user.member_master
+	   	FROM jps_user.member_master
+		     INNER JOIN jps_user.order_tran
+		     ON jps_user.member_master.kaiin_id = jps_user.order_tran.kaiin_id
+		     INNER JOIN jps_user.orderdetail_tran
+		     ON jps_user.order_tran.kaiin_id.uke_no = jps_user.orderdetail_tran.uke_no
+		ORDER BY jps_user.member_master.kaiin_id
     </select>
 </mapper>

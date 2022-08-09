@@ -9,4 +9,6 @@ import com.example.demo.member_master.DesignUserForm;
 @Mapper
 public interface DesignUserMapper {
 	List<DesignUser> selectAll();
+	
+	void insert_order_tran(mmRegister design);
 }
