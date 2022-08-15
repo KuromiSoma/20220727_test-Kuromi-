@@ -20,7 +20,7 @@
     </select>
     
     <insert id="insert_order_tran">
-        INSERT INTO jps_user.member_master (kaiin_id,tel_no,add_no,add1_name,add2_name,add3_name)
-        VALUES #{telNo}, #{addNo}, #{add1}, #{add2}, #{add3}, CURRENT_DATE )
+        INSERT INTO jps_user.member_master (kaiin_id, tel_no, add_no, add1_name, add2_name, add3_name)
+        VALUES ( #{kaiinId}, #{gdNm}, #{telNo}, #{addNo}, #{add1}, #{add2}, #{add3}, CURRENT_DATE )
     </insert>
 </mapper>
