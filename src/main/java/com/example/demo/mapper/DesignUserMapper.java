@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 import com.example.demo.member_master.DesignUser;
 import com.example.demo.member_master.DesignUserForm;
+import com.example.demo.mmRegister.mmRegister;
 
 @Mapper
 public interface DesignUserMapper {
