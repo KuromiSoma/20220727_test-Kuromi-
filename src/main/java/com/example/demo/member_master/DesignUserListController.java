@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class DesignUserListController {
 
 	@Autowired
-	private DesignUserList designUserList;
+	private DesignUserList DesignUserList;
 
 	@RequestMapping(path = "/designuserlist", method = RequestMethod.GET)
 	String index(Model model) {
-		List<DesignUser> list = this.designUserList.getUserList();
+		List<DesignUser> list = this.DesignUserList.getUserList();
 	    model.addAttribute("list", list);
-	    return "designUserList";
+	    return "DesignUserList";
 	}
 }

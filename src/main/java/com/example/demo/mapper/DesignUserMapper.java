@@ -11,5 +11,5 @@ import com.example.demo.mmRegister.mmRegister;
 public interface DesignUserMapper {
 	List<DesignUser> selectAll();
 	
-	void insert_order_tran(mmRegister design);
+	//void insert_order_tran(mmRegister design);
 }

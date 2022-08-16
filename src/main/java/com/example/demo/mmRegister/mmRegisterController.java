@@ -13,6 +13,6 @@ public class mmRegisterController {
 	String index(Model model) {
 	    mmRegisterForm mmRegisterForm = new mmRegisterForm();
 		model.addAttribute("design",mmRegisterForm);
-	    return "com.example.demo.member_master.DesignUserList";
+	    return "DesignUserList";
 	}
 }
