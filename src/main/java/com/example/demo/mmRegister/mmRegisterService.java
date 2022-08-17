@@ -8,17 +8,21 @@ import java.sql.Timestamp;
 import com.example.demo.common.PrintCommonUtil;
 import com.example.demo.mapper.DesignUserMapper;
 import com.example.demo.mapper.TorihikiUserMapper;
+import com.example.demo.mapper.mmRegisterMapper;
 import com.example.demo.member_master.DesignUser;
 
 @Service
 @Transactional
 public class mmRegisterService {
+	
 	@Autowired
-	private DesignUserMapper designUserMapper;
+	DesignUserMapper designUserMapper;
+	
+	@Autowired
+	mmRegisterMapper mmRegisterMapper;
 
-	public List<DesignUser> getUserList() {
-		List<DesignUser> userList = designUserMapper.selectAll();
+	public List<mmRegister> getUserList() {
+		List<mmRegister> userList = mmRegisterMapper.selectAll();
 		return userList;
 	}
-
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.mmRegisterMapper">
+    <select id="selectAll" resultType="com.example.demo.mmRegister.mmRegister">
+		SELECT member_master.kaiin_id as kaiinId
+		      ,gd_name as gdNm
+		      ,member_master.tel_no as telNo
+		      ,member_master.add_no as addNo
+		      ,member_master.add1_name as add1
+		      ,member_master.add2_name as add2
+		      ,member_master.add3_name as add3
+	   	FROM jps_user.member_master
+	 	INNER JOIN jps_user.order_tran
+	     ON jps_user.member_master.kaiin_id = jps_user.order_tran.kaiin_id
+		INNER JOIN jps_user.orderdetail_tran
+         ON jps_user.order_tran.uke_no = jps_user.orderdetail_tran.uke_no
+		ORDER BY jps_user.member_master.kaiin_id
+    </select>
+    
+    <insert id="insert_order_tran">
+        INSERT INTO jps_user.member_master (kaiin_id, tel_no, add_no, add1_name, add2_name, add3_name)
+        VALUES ( #{kaiinId}, #{gdNm}, #{telNo}, #{addNo}, #{add1}, #{add2}, #{add3}, CURRENT_DATE )
+    </insert>
+    
+    <insert id="insert_orderdetail_tran">
+        INSERT INTO jps_user.member_master (kaiin_id, tel_no, add_no, add1_name, add2_name, add3_name)
+        VALUES ( #{kaiinId}, #{gdNm}, #{telNo}, #{addNo}, #{add1}, #{add2}, #{add3}, CURRENT_DATE )
+    </insert>
+</mapper>

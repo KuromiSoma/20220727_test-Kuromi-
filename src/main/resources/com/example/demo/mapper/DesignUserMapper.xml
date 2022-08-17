@@ -12,15 +12,5 @@
 		      ,add2_name as add2
 		      ,add3_name as add3
 	   	FROM jps_user.member_master
-		     INNER JOIN jps_user.order_tran
-		     ON jps_user.member_master.kaiin_id = jps_user.order_tran.kaiin_id
-		     INNER JOIN jps_user.orderdetail_tran
-		     ON jps_user.order_tran.uke_no = jps_user.orderdetail_tran.uke_no
-		ORDER BY jps_user.member_master.kaiin_id
     </select>
-    
-    <insert id="insert_order_tran">
-        INSERT INTO jps_user.member_master (kaiin_id, tel_no, add_no, add1_name, add2_name, add3_name)
-        VALUES ( #{kaiinId}, #{gdNm}, #{telNo}, #{addNo}, #{add1}, #{add2}, #{add3}, CURRENT_DATE )
-    </insert>
 </mapper>
